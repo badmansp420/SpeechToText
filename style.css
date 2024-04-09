@@ -1,0 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/samarkan');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: Samaskaran;
+    src: url(./assets/fonts/samarkan/SAMAN___.TTF);
+}
+
+header h3 {
+    font-family: Samaskaran;
+    color: #fff;
+    font-size: 32px;
+    word-spacing: 4px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    gap: 1.4rem;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+main section .mic-button button {
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.mic-button button i {
+    font-size: 22px;
+}
+
+.text-area .text {
+    height: 18rem;
+    width: 80rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgb(180, 177, 177);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+
+}
